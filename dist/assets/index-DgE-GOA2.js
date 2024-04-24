@@ -6,11 +6,11 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
           <div class="record">
             <img
               class="record-block-img"
-              src="../../../public/abstractArt.jpg"
+              src="./abstractArt.jpg"
               alt="картинка"
             />
             <div class="row record-block-user">
-              <img class="col-auto" src="/public/comment.svg" alt="комментарий" />
+              <img class="col-auto" src="../public/comment.svg" alt="комментарий" />
               <p class="col-auto user-comment">
                 <span class="user-name">Jason Anderson</span> commented:
               </p>
