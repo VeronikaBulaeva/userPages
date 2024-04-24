@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))c(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&c(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();const m=()=>`<section class="main">
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))c(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&c(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();const p=()=>`<section class="main">
     <div class="container">
       <div class="row justify-content-md-between">
         <!--Посты-->
@@ -6,11 +6,11 @@
           <div class="record">
             <img
               class="record-block-img"
-              src="/src/img/abstractArt.jpg"
+              src="/public/abstractArt.jpg"
               alt="картинка"
             />
             <div class="row record-block-user">
-              <img class="col-auto" src="/src/img/comment.svg" alt="комментарий" />
+              <img class="col-auto" src="/public/comment.svg" alt="комментарий" />
               <p class="col-auto user-comment">
                 <span class="user-name">Jason Anderson</span> commented:
               </p>
@@ -30,7 +30,7 @@
                   <div class="row col-auto">
                     <img
                       class="col-auto icon-comment"
-                      src="/src/img/eye.svg"
+                      src="/public/eye.svg"
                       alt="комментарий"
                     />
                     <p class="col-auto number-comment">432</p>
@@ -38,7 +38,7 @@
                   <div class="row col-auto">
                     <img
                       class="col-auto icon-comment"
-                      src="/src/img/comment.svg"
+                      src="/public/comment.svg"
                       alt="комментарий"
                     />
                     <p class="col-auto number-comment">47</p>
@@ -61,7 +61,7 @@
                     <div class="row accordion-record">
                       <p class="col-auto">Sunset Sunset Sunset</p>
                       <div class="col-auto g-3 g-md-0 accordion-record-time">
-                        <img src="/src/img/clock.svg" alt="время" />
+                        <img src="/public/clock.svg" alt="время" />
                         <p>53 minutes ago</p>
                       </div>
                     </div>
@@ -95,7 +95,7 @@
                     <div class="row accordion-record">
                       <p class="col-auto">Morning of Siberia</p>
                       <div class="col-auto g-3 g-sm-0 accordion-record-time">
-                        <img src="/src/img/clock.svg" alt="время" />
+                        <img src="/public/clock.svg" alt="время" />
                         <p>56 minutes ago</p>
                       </div>
                     </div>
@@ -121,15 +121,15 @@
           >
             <div class="row col-12 side-bar">
               <div class="profile-block col-12">
-                <img class="profile-photo" src="/src/img/Hanna.jpg" alt="фото" />
+                <img class="profile-photo" src="/public/Hanna.jpg" alt="фото" />
                 <div class="profile-id">
                   <p class="profile-id-name">Hanna Dorman</p>
                   <p class="profile-id-prof">UX/UI designer</p>
                 </div>
                 <div class="row social">
-                  <img class="col g-0" src="/src/img/tg.svg" alt="тг" />
-                  <img class="col g-0" src="/src/img/hh.svg" alt="hh" />
-                  <img class="col g-0" src="/src/img/twitter.svg" alt="твиттер" />
+                  <img class="col g-0" src="/public/tg.svg" alt="тг" />
+                  <img class="col g-0" src="/public/hh.svg" alt="hh" />
+                  <img class="col g-0" src="/public/twitter.svg" alt="твиттер" />
                 </div>
               </div>
               <!--Аккордеон профиля1-->
@@ -159,7 +159,7 @@
                             <button type="button" class="btn profile-button">
                               <img
                                 class="profile-button-img"
-                                src="/src/img/profile.svg"
+                                src="/public/profile.svg"
                                 alt="профиль"
                               />
                               My profile
@@ -169,7 +169,7 @@
                               <button type="button" class="btn col-auto">
                                 <img
                                   class="profile-button-img"
-                                  src="/src/img/coins.svg"
+                                  src="/public/coins.svg"
                                   alt="баланс"
                                 />
                                 Balance
@@ -181,7 +181,7 @@
                               <button type="button" class="btn col-auto">
                                 <img
                                   class="profile-button-img"
-                                  src="/src/img/connections.svg"
+                                  src="/public/connections.svg"
                                   alt="связи"
                                 />
                                 Connections
@@ -191,7 +191,7 @@
                             <button type="button" class="btn profile-button">
                               <img
                                 class="profile-button-img"
-                                src="/src/img/friends.svg"
+                                src="/public/friends.svg"
                                 alt="друзья"
                               />
                               Friends
@@ -204,7 +204,7 @@
                             <button type="button" class="btn col-auto">
                               <img
                                 class="profile-button-img"
-                                src="/src/img/calendar.svg"
+                                src="/public/calendar.svg"
                                 alt="календарь"
                               />
                               Events
@@ -215,7 +215,7 @@
                           <button type="button" class="btn profile-button">
                             <img
                               class="profile-button-img"
-                              src="/src/img/gear.svg"
+                              src="/public/gear.svg"
                               alt="настройки"
                             />
                             Account settings
@@ -275,7 +275,7 @@
         </div>
       </div> 
     </section>
-`;class p extends HTMLElement{constructor(){super(),this.innerHTML='<div id="map" class="yMap loaded"></div>',navigator.geolocation.getCurrentPosition(i=>{i.coords});let s=document.createElement("script");s.innerHTML=`initMap().finally(() => {
+`;class u extends HTMLElement{constructor(){super(),this.innerHTML='<div id="map" class="yMap loaded"></div>',navigator.geolocation.getCurrentPosition(i=>{i.coords});let s=document.createElement("script");s.innerHTML=`initMap().finally(() => {
       window.setTimeout(() => {
         document.getElementById('preloader').classList.add('loaded');
         document.getElementById("map").classList.remove("loaded");
@@ -308,7 +308,7 @@
        .addChild(new YMapZoomControl({}))
       );
     }
-    `,document.body.appendChild(s)}}customElements.define("map-component",p);const u=()=>`
+    `,document.body.appendChild(s)}}customElements.define("map-component",u);const m=()=>`
  <section class="main">
   <div class="container wrapper">
    <h1>Basic map</h1>
@@ -320,10 +320,10 @@
    <map-component></map-component>
   </div>
  </section>
-`;class g extends HTMLElement{constructor(){super(),this.innerHTML='<h1 id="timer"></h1>';let s=document.getElementById("timer");const i=Number(sessionStorage.getItem("timeStart"));function c(){let t=new Date().getTime();const o=new Date(t-i);let r=o.getUTCSeconds()<10?`0${o.getUTCSeconds()}`:o.getUTCSeconds(),l=o.getUTCMinutes()<10?`0${o.getUTCMinutes()}`:o.getUTCMinutes(),d=o.getUTCHours()<10?`0${o.getUTCHours()}`:o.getUTCHours();s.textContent=`${d}:${l}:${r}`}c(),(()=>{setInterval(c,1e3)})()}}customElements.define("timer-counter",g);const v=()=>`<section class="main">
+`;class v extends HTMLElement{constructor(){super(),this.innerHTML='<h1 id="timer"></h1>';let s=document.getElementById("timer");const i=Number(sessionStorage.getItem("timeStart"));function c(){let t=new Date().getTime();const o=new Date(t-i);let l=o.getUTCSeconds()<10?`0${o.getUTCSeconds()}`:o.getUTCSeconds(),r=o.getUTCMinutes()<10?`0${o.getUTCMinutes()}`:o.getUTCMinutes(),d=o.getUTCHours()<10?`0${o.getUTCHours()}`:o.getUTCHours();s.textContent=`${d}:${r}:${l}`}c(),(()=>{setInterval(c,1e3)})()}}customElements.define("timer-counter",v);const g=()=>`<section class="main">
 <div class="container wrapper">
 <h1>Timer</h1>
 <timer-counter></timer-counter>
 </div>
 </section>
-  `;sessionStorage.setItem("timeStart",new Date().getTime().toString());document.getElementById("menuIsOpen").onclick=function(){document.getElementById("headerBottomMenu").classList.toggle("is-open")};const f={"/":{title:"Profile",render:m},"/map":{title:"Map",render:u},"/timer":{title:"Timer",render:v}};function n(){let a=f[location.pathname];document.title=a.title,a?(document.title=a.title,app.innerHTML=a.render()):(history.replaceState("","","/"),n());const s=document.getElementById("TimerNav"),i=document.getElementById("MapNav"),c=document.getElementById("ActivityNav");switch(location.pathname){case"/timer":s.classList.add("a-focus"),i.classList.remove("a-focus"),c.classList.remove("a-focus");break;case"/map":i.classList.add("a-focus"),c.classList.remove("a-focus"),s.classList.remove("a-focus");break;case"/":c.classList.add("a-focus"),s.classList.remove("a-focus"),i.classList.remove("a-focus");break}}window.addEventListener("click",a=>{a.target.matches("[data-link]")&&(a.preventDefault(),history.pushState("","",a.target.href),n())});window.addEventListener("popstate",n);window.addEventListener("DOMContentLoaded",n);
+  `;sessionStorage.setItem("timeStart",new Date().getTime().toString());document.getElementById("menuIsOpen").onclick=function(){document.getElementById("headerBottomMenu").classList.toggle("is-open")};const b={"/":{title:"Profile",render:p},"/map":{title:"Map",render:m},"/timer":{title:"Timer",render:g}};function n(){let a=b[location.pathname];document.title=a.title,a?(document.title=a.title,app.innerHTML=a.render()):(history.replaceState("","","/"),n());const s=document.getElementById("TimerNav"),i=document.getElementById("MapNav"),c=document.getElementById("ActivityNav");switch(location.pathname){case"/timer":s.classList.add("a-focus"),i.classList.remove("a-focus"),c.classList.remove("a-focus");break;case"/map":i.classList.add("a-focus"),c.classList.remove("a-focus"),s.classList.remove("a-focus");break;case"/":c.classList.add("a-focus"),s.classList.remove("a-focus"),i.classList.remove("a-focus");break}}window.addEventListener("click",a=>{a.target.matches("[data-link]")&&(a.preventDefault(),history.pushState("","",a.target.href),n())});window.addEventListener("popstate",n);window.addEventListener("DOMContentLoaded",n);
