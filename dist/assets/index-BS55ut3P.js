@@ -6,7 +6,7 @@
           <div class="record">
             <img
               class="record-block-img"
-              src="public/abstractArt.jpg"
+              src="../../../public/abstractArt.jpg"
               alt="картинка"
             />
             <div class="row record-block-user">
