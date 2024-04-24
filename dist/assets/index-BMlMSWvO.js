@@ -10,7 +10,7 @@
               alt="картинка"
             />
             <div class="row record-block-user">
-              <img class="col-auto" src="public/comment.svg" alt="комментарий" />
+              <img class="col-auto" src="/public/comment.svg" alt="комментарий" />
               <p class="col-auto user-comment">
                 <span class="user-name">Jason Anderson</span> commented:
               </p>
