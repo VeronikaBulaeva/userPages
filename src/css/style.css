@@ -1,0 +1,498 @@
+:root {
+	--blue: #5095EC;
+	--black: #505050;
+	--secondText: #8F8F8F;
+	--grey: #D3D8DE;
+	--bg: #F1F1F1;
+	--white: #FFFFFF;
+	--bgSecondary: #FAFAFA;
+}
+
+button {
+	background-color: var(--bgSecondary);
+}
+
+.btn {
+	--bs-btn-border-radius: 0;
+}
+
+
+button:hover, a:hover {
+	--bs-btn-hover-bg: var(--bg);
+}
+
+ul {
+	margin: 0;
+}
+
+li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	padding: 0;
+	z-index: 1001;
+}
+
+.a-focus {
+	background-color: var(--bg);
+	--bs-btn-hover-bg: var(--bg);
+}
+
+a > * {
+	pointer-events: none;
+}
+
+header {
+	background-color: var(--white);
+}
+
+body {
+	background-color: var(--bg);
+	font-family: Roboto;
+
+}
+
+p {
+	margin-block: 0;
+}
+
+/* header */
+
+.header-top-box {
+	box-shadow: 0 1px 1px 0 #0000001A;
+
+}
+
+.header-top {
+	padding: 8px 0;
+	margin-inline: 10px;
+}
+
+.header-top-right {
+	gap: 13px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.header-top-img {
+	width: 14px;
+	height: 10px;
+}
+
+.header-top-text, .header-top-span {
+	font-size: 18px;
+	line-height: 21px;
+	color: var(--black);
+}
+
+.header-top-text {
+	font-weight: 500;
+
+}
+
+.header-top-span {
+	font-weight: 400;
+}
+
+.header-top-left {
+	text-align: center;
+	padding-top: 16px;
+}
+
+.header-top-left-block {
+	display: grid;
+	gap: 8px;
+}
+
+.header-top-left-block-img {
+	justify-self: center;
+}
+
+.header-bottom {
+	margin-top: 2px;
+	padding-inline: 10px;
+	background-color: var(--bgSecondary);
+	box-shadow: 0 1px 1px 0 #0000001A;
+}
+
+@media screen and (width >= 768px) {
+	.header-bottom {
+		height: 40px;
+	}
+}
+
+.header-bottom-left {
+	display: grid;
+	opacity: 0;
+	gap: 20px;
+	position: absolute;
+	top: 40px;
+	left: 11px;
+	width: 100%;
+	padding-inline: 20px;
+	text-align: center;
+	background-color: var(--white);
+	transition: opacity 0.25s;
+}
+
+@media screen and (width >= 768px) {
+	.header-bottom-left {
+		width: auto;
+		display: block;
+		position: static;
+		padding-inline: 0;
+		background-color: transparent;
+		opacity: 1;
+	}
+}
+
+.header-bottom-box {
+	position: relative;
+	margin-inline: 10px;
+}
+
+.header-gap {
+	gap: 0;
+}
+
+@media screen and (width >= 576px) {
+	.header-gap {
+		gap: 10px
+	}
+}
+
+@media screen and (width >= 992px) {
+	.header-gap {
+		gap: 20px;
+	}
+}
+
+.header-bottom-img {
+	padding-right: 8px;
+}
+
+.buttonEvents {
+	pointer-events: auto;
+}
+
+@media screen and (width >= 768px) {
+	.buttonEvents {
+		pointer-events: none;
+	}
+}
+
+.is-open {
+	height: auto;
+	opacity: 1;
+	z-index: 1002;
+	transition: all 0.25s;
+}
+
+/* Main */
+
+.main {
+	margin-top: 32px;
+	margin-inline: 10px;
+}
+
+.main-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.accordion {
+	width: 100%;
+}
+
+/* Profile */
+.accordion-button-sideBar {
+	max-height: 38px;
+}
+
+.profile {
+	margin-right: -16px;
+}
+
+.side-bar {
+	gap: 32px;
+}
+
+.profile-block {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	text-align: center;
+	padding: 32px;
+	background-color: var(--white);
+}
+
+.profile-photo {
+	border-radius: 50%;
+}
+
+.profile-id {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.profile-id-name {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	color: var(--black);
+}
+
+.profile-id-prof {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	color: var(--secondText);
+}
+
+.social {
+	gap: 8px;
+}
+
+.side-bar-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.accordion-body-profile {
+	border-block: 1px solid var(--grey);
+	width: 100%;
+}
+
+.accordion-body-profile-block {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding: 8px;
+}
+
+.profile-button {
+	padding: 8px;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.profile-button-img {
+	padding-right: 8px;
+}
+
+.balance {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	color: var(--secondText);
+}
+
+.connections, .events {
+	border-radius: 8px;
+	padding: 0 5px 0 5px;
+	background-color: #E33939;
+	color: var(--white);
+
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+}
+
+.events {
+	background-color: #47B091;
+}
+
+textarea::placeholder, textarea {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: var(--grey);
+}
+
+textarea {
+	max-width: 100%;
+	line-height: 1.5;
+	border-radius: 4px;
+	border: 1px solid var(--grey);
+	padding: 8px 16px 8px 16px;
+}
+
+.profileTextarea {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 8px 16px 8px 16px;
+}
+
+.btn-primary {
+	background-color: var(--blue);
+}
+
+.btn-primary:hover {
+	background-color: var(--bs-btn-hover-border-color);
+}
+
+/* Посты */
+.records {
+	gap: 32px;
+}
+
+.record {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	background-color: var(--white);
+	padding: 56px 32px 32px 32px;
+}
+
+.record-block-img {
+	max-width: 100%;
+}
+
+.record-block-user {
+	gap: 8px;
+}
+
+.user-comment {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+
+	padding: 0;
+}
+
+.user-name {
+	color: var(--blue);
+}
+
+.record-block-item {
+	display: grid;
+	gap: 16px;
+	border-left: 2px solid var(--grey);
+	padding-left: 8px;
+}
+
+.record-block-text {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	color: var(--black);
+}
+
+.record-block-text-name {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	color: var(--secondText);
+}
+
+.icon-comment {
+	padding-right: 0;
+}
+
+.number-comment {
+	padding-right: 0;
+	margin-right: 20px;
+}
+
+.accordion-record {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding-inline: 16px;
+}
+
+.accordion-record-time {
+	display: flex;
+	gap: 8px;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+/* Таймер */
+h1 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+	color: var(--black);
+	margin: 18px;
+}
+
+/* Карта */
+.wrapper {
+	background-color: var(--white);
+	padding: 18px 32px 32px 32px;
+}
+
+.yMap {
+	width: 100%;
+	height: 400px
+}
+
+/*Preloader*/
+.preloader {
+	width: 100%;
+	height: 400px;
+	display: grid;
+	place-items: center;
+	background-color: var(--white);
+}
+
+.loader {
+	border: 10px solid var(--grey);
+	border-top: 10px solid var(--blue);
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loaded_hiding .preloader {
+	transition: 0.3s opacity;
+	opacity: 0;
+}
+
+.loaded {
+	display: none;
+}
