@@ -10,7 +10,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
               alt="картинка"
             />
             <div class="row record-block-user">
-              <img class="col-auto" src="../public/comment.svg" alt="комментарий" />
+              <img class="col-auto" src="./comment.svg" alt="комментарий" />
               <p class="col-auto user-comment">
                 <span class="user-name">Jason Anderson</span> commented:
               </p>
@@ -30,7 +30,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                   <div class="row col-auto">
                     <img
                       class="col-auto icon-comment"
-                      src="public/eye.svg"
+                      src="./eye.svg"
                       alt="комментарий"
                     />
                     <p class="col-auto number-comment">432</p>
@@ -38,7 +38,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                   <div class="row col-auto">
                     <img
                       class="col-auto icon-comment"
-                      src="public/comment.svg"
+                      src="./comment.svg"
                       alt="комментарий"
                     />
                     <p class="col-auto number-comment">47</p>
@@ -61,7 +61,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                     <div class="row accordion-record">
                       <p class="col-auto">Sunset Sunset Sunset</p>
                       <div class="col-auto g-3 g-md-0 accordion-record-time">
-                        <img src="public/clock.svg" alt="время" />
+                        <img src="./clock.svg" alt="время" />
                         <p>53 minutes ago</p>
                       </div>
                     </div>
@@ -95,7 +95,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                     <div class="row accordion-record">
                       <p class="col-auto">Morning of Siberia</p>
                       <div class="col-auto g-3 g-sm-0 accordion-record-time">
-                        <img src="public/clock.svg" alt="время" />
+                        <img src="./clock.svg" alt="время" />
                         <p>56 minutes ago</p>
                       </div>
                     </div>
@@ -121,15 +121,15 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
           >
             <div class="row col-12 side-bar">
               <div class="profile-block col-12">
-                <img class="profile-photo" src="public/Hanna.jpg" alt="фото" />
+                <img class="profile-photo" src="./Hanna.jpg" alt="фото" />
                 <div class="profile-id">
                   <p class="profile-id-name">Hanna Dorman</p>
                   <p class="profile-id-prof">UX/UI designer</p>
                 </div>
                 <div class="row social">
-                  <img class="col g-0" src="public/tg.svg" alt="тг" />
-                  <img class="col g-0" src="public/hh.svg" alt="hh" />
-                  <img class="col g-0" src="public/twitter.svg" alt="твиттер" />
+                  <img class="col g-0" src="./tg.svg" alt="тг" />
+                  <img class="col g-0" src="./hh.svg" alt="hh" />
+                  <img class="col g-0" src="./twitter.svg" alt="твиттер" />
                 </div>
               </div>
               <!--Аккордеон профиля1-->
@@ -159,7 +159,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                             <button type="button" class="btn profile-button">
                               <img
                                 class="profile-button-img"
-                                src="public/profile.svg"
+                                src="./profile.svg"
                                 alt="профиль"
                               />
                               My profile
@@ -169,7 +169,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                               <button type="button" class="btn col-auto">
                                 <img
                                   class="profile-button-img"
-                                  src="public/coins.svg"
+                                  src="./coins.svg"
                                   alt="баланс"
                                 />
                                 Balance
@@ -181,7 +181,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                               <button type="button" class="btn col-auto">
                                 <img
                                   class="profile-button-img"
-                                  src="public/connections.svg"
+                                  src="./connections.svg"
                                   alt="связи"
                                 />
                                 Connections
@@ -191,7 +191,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                             <button type="button" class="btn profile-button">
                               <img
                                 class="profile-button-img"
-                                src="public/friends.svg"
+                                src="./friends.svg"
                                 alt="друзья"
                               />
                               Friends
@@ -204,7 +204,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                             <button type="button" class="btn col-auto">
                               <img
                                 class="profile-button-img"
-                                src="public/calendar.svg"
+                                src="./calendar.svg"
                                 alt="календарь"
                               />
                               Events
@@ -215,7 +215,7 @@ var Or=(L,S)=>()=>(S||L((S={exports:{}}).exports,S),S.exports);var Ir=Or((ss,fi)
                           <button type="button" class="btn profile-button">
                             <img
                               class="profile-button-img"
-                              src="public/gear.svg"
+                              src="./gear.svg"
                               alt="настройки"
                             />
                             Account settings
