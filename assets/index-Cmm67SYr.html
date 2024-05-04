@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Page</title>
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./src/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=4d84a2fe-f335-4d15-8004-817b94d74f8d&lang=ru_RU"></script>
+	  <script defer type="module" src="./src/js/main.js"></script>
+	  <script defer type="module" src="./src/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-top-box">
+        <div class="container g-0">
+          <div
+            class="row align-items-center justify-content-sm-between header-top"
+          >
+            <button
+              onclick="history.back()"
+              class="row col-auto g-0 header-top-right"
+              data-link
+            >
+              <img class="header-top-img" src="./src/img/back.svg" alt="назад" />
+	
+	            <div class="col header-top-name">
+                <span class="header-top-text">User pages</span>
+                <span class="header-top-span"> - Profile</span>
+              </div>
+            </button>
+            <ul
+              class="row col-auto justify-content-sm-end justify-content-start align-items-center header-top-left"
+            >
+              <li class="col header-top-left-block">
+                <img
+                  class="header-top-left-block-img"
+                  src="./src/img/chart.svg"
+                  alt="статистика"
+                />
+                <p class="g-0">Statistics</p>
+              </li>
+              <li class="col header-top-left-block">
+                <img
+                  class="header-top-left-block-img"
+                  src="./src/img/calculate.svg"
+                  alt="калькулятор"
+                />
+                <p class="g-0">Invoices</p>
+              </li>
+              <li class="col header-top-left-block">
+                <img
+                  class="header-top-left-block-img"
+                  src="./src/img/receipt.svg"
+                  alt="чек"
+                />
+                <p class="g-0">Schedule</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="header-bottom">
+        <div class="container g-0">
+          <div
+            class="row justify-content-between align-items-center header-bottom-box"
+          >
+            <ul
+              class="row p-0 col-auto justify-content-start align-items-center header-bottom-right header-gap"
+            >
+              <li class="col-auto p-0">
+                <a
+                  id="ActivityNav"
+                  href="/userPages/"
+                  class="btn col-auto"
+                  data-link
+                >
+                  <img
+                    src="./src/img/burger.svg"
+                    alt="меню"
+                    class="header-bottom-img"
+                  />Activity
+                </a>
+              </li>
+              <li class="col-auto p-0">
+                <a
+                  id="MapNav"
+                  href="/userPages/map"
+                  class="btn col-auto"
+                  data-link
+                >
+                  <img
+                    src="./src/img/map.svg"
+                    alt="локация"
+                    class="header-bottom-img"
+                  />Map
+                </a>
+              </li>
+              <li class="col-auto p-0">
+                <a
+                  id="TimerNav"
+                  href="/userPages/timer"
+                  class="btn col-auto"
+                  data-link
+                >
+                  <img
+                    src="./src/img/clock.svg"
+                    alt="часы"
+                    class="header-bottom-img"
+                  />Time
+                </a>
+              </li>
+            </ul>
+            <div
+              class="row col-auto justify-content-sm-end justify-content-start align-items-center header-gap"
+            >
+              <ul
+                class="row col-auto p-0 pe-md-3 justify-content-md-end justify-content-center align-items-center header-bottom-left"
+                id="headerBottomMenu"
+              >
+                <li class="btn col-auto">
+                  <img
+                    src="./src/img/note.svg"
+                    alt="заметки"
+                    class="header-bottom-img"
+                  />Notes
+                </li>
+                <li class="btn col-auto">
+                  <img
+                    src="./src/img/friends.svg"
+                    alt="друзья"
+                    class="header-bottom-img"
+                  />Friends
+                </li>
+                <li class="btn col-auto">
+                  <img
+                    src="./src/img/picture.svg"
+                    alt="картинка"
+                    class="header-bottom-img"
+                  />Photos
+                </li>
+              </ul>
+              <button id="menuIsOpen" class="btn col-auto p-0 buttonEvents">
+                <img
+                  src="./src/img/gear.svg"
+                  alt="настройки"
+                  class="header-bottom-img"
+                />
+                <img
+                  src="./src/img/smallArrow.svg"
+                  alt="стрелка"
+                  class="header-bottom-img"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="app"></main>
+  </body>
+</html>
