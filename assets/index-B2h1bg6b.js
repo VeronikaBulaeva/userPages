@@ -7,7 +7,7 @@ var xr=(A,D)=>()=>(D||A((D={exports:{}}).exports,D),D.exports);var Pr=xr((os,fi)
           <div class="record">
             <img
               class="record-block-img"
-              src="./src/img/abstractArt.jpg"
+              src="./abstractArt.jpg"
               alt="картинка"
             />
             <div class="row record-block-user">
