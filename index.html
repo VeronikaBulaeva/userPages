@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>User Page</title>
-    <link href="src/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="src/css/style.css" rel="stylesheet" />
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./src/css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
     <script src="https://api-maps.yandex.ru/v3/?apikey=4d84a2fe-f335-4d15-8004-817b94d74f8d&lang=ru_RU"></script>
+	  <script defer type="module" src="./src/js/main.js"></script>
+	  <script defer type="module" src="./src/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -22,20 +24,25 @@
           <div
             class="row align-items-center justify-content-sm-between header-top"
           >
-            <a href="/" class="row col-auto g-0 header-top-right" data-link>
-              <img class="header-top-img" src="src/img/back.svg" alt="назад" />
-              <div class="col header-top-name">
+            <button
+              onclick="history.back()"
+              class="row col-auto g-0 header-top-right"
+              data-link
+            >
+              <img class="header-top-img" src="./src/img/back.svg" alt="назад" />
+	
+	            <div class="col header-top-name">
                 <span class="header-top-text">User pages</span>
                 <span class="header-top-span"> - Profile</span>
               </div>
-            </a>
+            </button>
             <ul
               class="row col-auto justify-content-sm-end justify-content-start align-items-center header-top-left"
             >
               <li class="col header-top-left-block">
                 <img
                   class="header-top-left-block-img"
-                  src="src/img/chart.svg"
+                  src="./src/img/chart.svg"
                   alt="статистика"
                 />
                 <p class="g-0">Statistics</p>
@@ -43,7 +50,7 @@
               <li class="col header-top-left-block">
                 <img
                   class="header-top-left-block-img"
-                  src="src/img/calculate.svg"
+                  src="./src/img/calculate.svg"
                   alt="калькулятор"
                 />
                 <p class="g-0">Invoices</p>
@@ -51,7 +58,7 @@
               <li class="col header-top-left-block">
                 <img
                   class="header-top-left-block-img"
-                  src="src/img/receipt.svg"
+                  src="./src/img/receipt.svg"
                   alt="чек"
                 />
                 <p class="g-0">Schedule</p>
@@ -66,30 +73,45 @@
             class="row justify-content-between align-items-center header-bottom-box"
           >
             <ul
-              class="row col-auto justify-content-start align-items-center header-bottom-right header-gap"
+              class="row p-0 col-auto justify-content-start align-items-center header-bottom-right header-gap"
             >
               <li class="col-auto p-0">
-                <a id="ActivityNav" href="/" class="btn col-auto" data-link>
+                <a
+                  id="ActivityNav"
+                  href="/userPages/"
+                  class="btn col-auto"
+                  data-link
+                >
                   <img
-                    src="src/img/burger.svg"
+                    src="./src/img/burger.svg"
                     alt="меню"
                     class="header-bottom-img"
                   />Activity
                 </a>
               </li>
               <li class="col-auto p-0">
-                <a id="MapNav" href="/map" class="btn col-auto" data-link>
+                <a
+                  id="MapNav"
+                  href="/userPages/map"
+                  class="btn col-auto"
+                  data-link
+                >
                   <img
-                    src="src/img/map.svg"
+                    src="./src/img/map.svg"
                     alt="локация"
                     class="header-bottom-img"
                   />Map
                 </a>
               </li>
               <li class="col-auto p-0">
-                <a id="TimerNav" href="/timer" class="btn col-auto" data-link>
+                <a
+                  id="TimerNav"
+                  href="/userPages/timer"
+                  class="btn col-auto"
+                  data-link
+                >
                   <img
-                    src="src/img/clock.svg"
+                    src="./src/img/clock.svg"
                     alt="часы"
                     class="header-bottom-img"
                   />Time
@@ -105,21 +127,21 @@
               >
                 <li class="btn col-auto">
                   <img
-                    src="src/img/note.svg"
+                    src="./src/img/note.svg"
                     alt="заметки"
                     class="header-bottom-img"
                   />Notes
                 </li>
                 <li class="btn col-auto">
                   <img
-                    src="src/img/friends.svg"
+                    src="./src/img/friends.svg"
                     alt="друзья"
                     class="header-bottom-img"
                   />Friends
                 </li>
                 <li class="btn col-auto">
                   <img
-                    src="src/img/picture.svg"
+                    src="./src/img/picture.svg"
                     alt="картинка"
                     class="header-bottom-img"
                   />Photos
@@ -127,12 +149,12 @@
               </ul>
               <button id="menuIsOpen" class="btn col-auto p-0 buttonEvents">
                 <img
-                  src="src/img/gear.svg"
+                  src="./src/img/gear.svg"
                   alt="настройки"
                   class="header-bottom-img"
                 />
                 <img
-                  src="src/img/smallArrow.svg"
+                  src="./src/img/smallArrow.svg"
                   alt="стрелка"
                   class="header-bottom-img"
                 />
@@ -144,7 +166,5 @@
     </header>
 
     <main id="app"></main>
-    <script type="module" src="./src/js/main.js"></script>
-    <script src="src/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

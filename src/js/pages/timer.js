@@ -1,11 +1,11 @@
 import "./components/timerComponent.js";
 
-export default () => {
+export default (timeStart) => {
   return `<section class="main">
-<div class="container wrapper">
-<h1>Timer</h1>
-<timer-counter></timer-counter>
-</div>
-</section>
-  `;
+ <div class="container wrapper">
+  <h1 class="default-text">Timer</h1>
+  <timer-counter time="${timeStart}">
+  </timer-counter>
+ </div>
+</section>`
 };

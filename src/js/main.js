@@ -1,28 +1,33 @@
-import profile from "./pages/profile";
-import map from "./pages/map";
-import timer from "./pages/timer";
-
-sessionStorage.setItem("timeStart", new Date().getTime().toString());
+import profile from "./pages/profile.js";
+import map from "./pages/map.js";
+import timer from "./pages/timer.js";
+import errorPage from "../js/pages/404.js";
 
 document.getElementById("menuIsOpen").onclick = function () {
   document.getElementById("headerBottomMenu").classList.toggle("is-open");
 };
 
+const timeStart = new Date().getTime();
+
 const routes = {
-  "/": { title: "Profile", render: profile },
-  "/map": { title: "Map", render: map },
-  "/timer": { title: "Timer", render: timer },
+  "/userPages/": { title: "Profile", render: profile },
+  "/userPages/map": { title: "Map", render: map },
+  "/userPages/timer": {
+    title: "Timer",
+    render: () => timer(timeStart),
+  },
+  "/userPages/404": { title: "404", render: () => errorPage() },
 };
 
-function router() {
-  let view = routes[location.pathname];
+async function router() {
+  let view = routes[location.pathname] || routes["/userPages/404"];
   document.title = view.title;
 
   if (view) {
     document.title = view.title;
-    app.innerHTML = view.render();
+    app.innerHTML = await view.render();
   } else {
-    history.replaceState("", "", "/");
+    history.replaceState("", "", "/userPages/");
     router();
   }
 
@@ -30,25 +35,28 @@ function router() {
   const map = document.getElementById("MapNav");
   const activity = document.getElementById("ActivityNav");
 
-  switch (location.pathname) {
-    case "/timer":
-      timer.classList.add("a-focus");
-      map.classList.remove("a-focus");
-      activity.classList.remove("a-focus");
-      break;
+  const pages = [
+    {
+      pathname: "/userPages/",
+      element: activity,
+    },
+    {
+      pathname: "/userPages/map",
+      element: map,
+    },
+    {
+      pathname: "/userPages/timer",
+      element: timer,
+    },
+  ];
 
-    case "/map":
-      map.classList.add("a-focus");
-      activity.classList.remove("a-focus");
-      timer.classList.remove("a-focus");
-      break;
-
-    case "/":
-      activity.classList.add("a-focus");
-      timer.classList.remove("a-focus");
-      map.classList.remove("a-focus");
-      break;
-  }
+  pages.forEach((item) => {
+    if (location.pathname === item.pathname) {
+      item.element.classList.add("a-focus");
+    } else {
+      item.element.classList.remove("a-focus");
+    }
+  });
 }
 
 window.addEventListener("click", (e) => {

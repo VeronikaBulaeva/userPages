@@ -1,29 +1,25 @@
-// New component
 class Timer extends HTMLElement {
   constructor() {
     super();
 
-    this.innerHTML = /*html*/ `<h1 id="timer"></h1>`;
+    this.innerHTML = `<h1 id="timer" class="default-text"></h1>`;
 
     let timer = document.getElementById("timer");
 
-    const timeStart = Number(sessionStorage.getItem("timeStart"));
+    const timeStart = this.getAttribute("time");
 
-    let interval;
-
-    // State
     function updateTime() {
-      let dateNow = new Date().getTime();
+      const dateNow = new Date().getTime();
       const timeDiff = new Date(dateNow - timeStart);
-      let seconds =
+      const seconds =
         timeDiff.getUTCSeconds() < 10
           ? `0${timeDiff.getUTCSeconds()}`
           : timeDiff.getUTCSeconds();
-      let minutes =
+      const minutes =
         timeDiff.getUTCMinutes() < 10
           ? `0${timeDiff.getUTCMinutes()}`
           : timeDiff.getUTCMinutes();
-      let hours =
+      const hours =
         timeDiff.getUTCHours() < 10
           ? `0${timeDiff.getUTCHours()}`
           : timeDiff.getUTCHours();
@@ -34,7 +30,7 @@ class Timer extends HTMLElement {
     updateTime();
 
     const startTimer = () => {
-      interval = setInterval(updateTime, 1000);
+      setInterval(updateTime, 1000);
     };
 
     startTimer();
